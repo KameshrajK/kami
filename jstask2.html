@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Integer</h1>
+    <script>
+        function testhundred(x) {
+            return ((Math.abs(100 - x) <= 20));
+        }
+
+        document.write(testhundred(10));
+        document.write(testhundred(90));
+        document.write(testhundred(99));
+
+
+    </script>
+    <h1>starbucks</h1>
+    <script>
+        var i;
+        for(i=1; i <= 5; i++){
+            document.write("*".repeat(i));
+            document.write('<br>')
+
+        }
+    </script>
+    <h1>Function</h1>
+    <script>  
+    function test50(x,y)
+    {
+        return ((x=50 || y == 50) || (x+y == 50));
+
+    }
+      document.write(test50(50,50))
+      document.write(test50(50,50))
+      document.write(test50(50,50))
+      document.write(test50(50,50))
+
+    </script>
+    <h1>Palindrome2</h1>
+    <script>
+        var fruits = ["Apple","Banana", "Mango" , "Pineapple"];
+        
+        if(fruits.indexOf("Pineapple") !== -1){
+            document.write("true")
+        }else{
+            document.write("false")
+        }
+        
+    </script>
+
+</body>
+</html>

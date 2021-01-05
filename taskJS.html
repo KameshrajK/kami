@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javatask</title>
+</head>
+
+<body>
+    <h1>Even Numbers</h1>
+    <p>I'm taking from 2 as Even Numbers..</p>
+    <script>
+        var i;
+        i = 2;
+        while (i < 100) {
+            document.write(+i);
+            i = 2 + i;
+
+        }
+
+    </script>
+    <!-- <h1>Leap Year</h1>
+    <script>
+        var n;
+        
+         if (n % 4 == 0)
+             document.write(n + "is leap year")
+        else
+        document.write(n + "is not leap year")
+
+
+    </script> -->
+
+    <h1>palindrome</h1>
+    <script>
+        var num, originalnum, reverse;
+        num = 151;
+        originalnum = num;
+        reverse = 0;
+        while (num != 0) {
+            reverse = (reverse * 10) + (num % 10);
+            num = parseInt(num / 10);
+        }
+        if (originalnum == reverse) {
+            document.write(reverse + "palindrome");
+
+        }
+        else {
+            document.write(reverse + "palindrome");
+        }
+    </script>
+    <h1>fibonacci</h1>
+    <script>
+        var n;
+        a = 0;
+        b = 1;
+        for (n = 1; n <= 10; n++) {
+            document.write(a + "<br>");
+            nextterm = a + b;
+            a = b;
+            b = nextterm;
+        }
+    </script>
+
+    <h1>Integer</h1>
+    <script>
+        function testhundred(x) {
+            return ((Math.abs(100 - x) <= 20));
+        }
+
+        document.write(testhundred(10));
+        document.write(testhundred(90));
+        document.write(testhundred(99));
+
+
+    </script>
+
+</body>
+
+</html>
