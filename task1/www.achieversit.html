@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>achieversit.com</title>
+    <style>
+        .home {
+            display: flex;
+            background-color: rgb(20, 17, 17);
+        }
+
+        .img {
+            flex: 3px;
+        }
+
+        .home ul,
+        li {
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+        }
+
+        .home li {
+            padding-right: 70px;
+            /* padding-bottom: -5px; */
+            padding-top: 15px;
+            font-size: 20px;
+        }
+
+
+        .a {
+            color: white;
+        }
+
+        .a {
+            border-radius: 5px;
+
+            text-decoration: none;
+        }
+
+        li:hover a {
+            color: red;
+        }
+
+        .off {
+            display: flex;
+            padding: 30px;
+
+        }
+
+        .b {
+            flex: 1;
+            text-decoration: none;
+            color: rgb(20, 17, 17);
+            border-radius: 25px;
+            padding: 12px 0px 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .b:hover {
+            background-color: red;
+
+            color: antiquewhite;
+        }
+
+        .middle {
+            display: flex;
+            /* flex: 1px; */
+            justify-content: space-around;
+
+            align-items: center;
+            margin: 0px 70px;
+            /* padding: opx;10px; */
+        }
+
+        .btn {
+            display: flex;
+
+        }
+
+        .btn {
+            flex: 1px;
+        }
+
+        .kmore {
+            margin: 5px;
+            padding: 5px;
+            color: rgb(92, 49, 133);
+            /* color: white; */
+        }
+        .kmore:hover{
+            color: white;
+
+        }
+
+
+
+        .c {
+            list-style: none;
+            text-decoration: none;
+            color: rgb(37, 33, 33);
+            padding: 2px 10px;
+            align-items: center;
+            line-height: 25px;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+
+        .c:hover {
+            background-color: red;
+            color: white;
+            /* border-radius: 20px; */
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            background: #5D4157;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+transform: scale(1.1);
+        }
+        
+
+        .tc {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px 50px;
+        }
+   
+        .ang {
+            line-height: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            border-bottom: 1px solid rgb(243, 233, 233);
+            color: white;
+            padding: 10px;
+
+            /* padding-right: 50px; */
+            /* padding-left: 10px; */
+            /* padding: 10px; */
+
+
+            background: #FFA17F;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #00223E, #FFA17F);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #00223E, #FFA17F);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang1 {
+            line-height: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            border-bottom: 1px solid rgb(243, 233, 233);
+            align-items: center;
+            color: white;
+            padding: 10px;
+            background: #D38312;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #A83279, #D38312);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #A83279, #D38312);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang2 {
+            line-height: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            border-bottom: 1px solid rgb(243, 233, 233);
+            align-items: center;
+            color: white;
+            padding: 10px;
+            background: #556270;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FF6B6B, #556270);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FF6B6B, #556270);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+
+        .ang3 {
+            line-height: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            border-bottom: 1px solid rgb(243, 233, 233);
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #C04848;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #480048, #C04848);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #480048, #C04848);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+
+
+        .rev {
+            font-style: italic;
+            border-top: 1px solid rgb(207, 175, 175);
+            padding: 0px 10px 5px;
+            line-height: 5px;
+
+        }
+
+        .fab {
+            /* width: 70px; */
+            font-size: 60px;
+            /* background-color: cornsilk; */
+            color: cornsilk;
+        }
+
+        .fas {
+            color: yellow;
+            /* border-top: 1px solid rgb(87, 72, 72); */
+
+        }
+
+        .middle1 {
+            display: flex;
+
+        }
+
+        .submiddle {
+            flex: 1px;
+            width: 90px;
+            /* height: 300px; */
+        }
+
+        .pa {
+            padding: 8px;
+        }
+
+        .middle1 {
+            margin: 0px 25px;
+        }
+
+        .submiddle {
+            margin-left: 25px;
+            border: 1px solid rgb(219, 206, 206);
+        }
+
+        .para {
+            text-align: justify;
+        }
+
+        .ang {
+            /* text-align: justify; */
+            /* text-align: center; */
+            align-items: center;
+        }
+
+        .middle {
+            display: flex;
+        }
+
+        .r {
+            padding: 10px;
+            line-height: 10px;
+        }
+
+        .middle2 {
+            display: flex;
+            margin: 30px 25px;
+        }
+
+        .submiddle1 {
+            flex: 1;
+            width: 100px;
+            /* padding: 0px 20px; */
+            margin-left: 25px;
+            border: 1px solid rgb(219, 206, 206);
+            flex: 1px;
+            width: 100px;
+        }
+
+        .ang4 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #5f2c82;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #49a09d, #5f2c82);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #49a09d, #5f2c82);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .ang5 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            border-bottomline-height: 5px;
+            font-fam: 1px solid rgb(243, 233, 233);
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #FF8008;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFC837, #FF8008);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFC837, #FF8008);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang6 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #AA076B;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #61045F, #AA076B);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #61045F, #AA076B);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang7 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #E5E5BE, #003973);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #E5E5BE, #003973);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .ra {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px 50px;
+        }
+
+        .middle3 {
+            display: flex;
+            margin: 30px 25px;
+        }
+
+        .submiddle2 {
+            flex: 1;
+            width: 100px;
+            /* padding: 0px 20px; */
+            margin-left: 25px;
+            border: 1px solid rgb(219, 206, 206);
+            flex: 1px;
+            width: 100px;
+        }
+
+        .ang8 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #73C8A9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #373B44, #73C8A9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #373B44, #73C8A9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang9 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #FDFC47;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24FE41, #FDFC47);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang10 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #F0C27B;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4B1248, #F0C27B);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang11 {
+            line-height: 5px;
+            /* font family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            /* border-bottomline-height: 5px; */
+            /* font-fam: 1px solid  rgb(243, 233, 233); */
+            align-items: center;
+            color: white;
+            padding: 10px;
+            padding-right: 10px;
+            background: #606c88;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3f4c6b, #606c88);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .cat {
+            display: flex;
+            /* flex: 1px; */
+            /* justify-content: center; */
+            margin: 30px 80px;
+        }
+
+        .dtc {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 30px 50px 10px;
+        }
+
+        .cat1 {
+            flex: 1;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* border: 1px solid rgb(233, 220, 220); */
+        }
+
+        .far {
+            font-size: 40px;
+            color: rgb(116, 116, 167);
+        }
+
+        .cat21 {
+            display: flex;
+            /* flex: 1px; */
+            /* justify-content: center; */
+            margin: 30px 80px;
+        }
+
+        .enroll {
+            background: #4b6cb7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .grow {
+
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding: 25px;
+        }
+
+        .conb {
+            padding: 10px;
+            color: rgb(105, 78, 204);
+        }
+
+        .conb:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .edge {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 20px 50px;
+        }
+
+        .ach .fas {
+            color: black;
+            font-size: 50px;
+            color: rgb(119, 58, 177);
+        }
+
+        .sol {
+            display: flex;
+            margin: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .doubt {
+            flex: 1;
+            text-align: center;
+            line-height: 5px;
+            margin: 0px 10px;
+            padding: 5px 0px;
+        }
+
+        .doubt:hover {
+            border: 1px solid rgb(223, 203, 203);
+        }
+
+        .time {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .cour {
+            text-align: center;
+            color: rgb(15, 15, 121);
+            background-image: url(./background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            /* width: 100%; */
+            /* height: 250px; */
+            /* width: 100%; */
+            padding: 10px;
+        }
+
+        .we {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .top {
+            display: flex;
+            /* padding: 0px 10px; */
+        }
+
+        .t1 {
+            flex: 1;
+            border: 1px solid rgb(223, 203, 203);
+            /* margin: 0px 10x; */
+        }
+
+        .t2 {
+            flex: 1;
+            border: 1px solid rgb(223, 203, 203);
+
+        }
+
+        .t3 {
+            flex: 1;
+            border: 1px solid rgb(223, 203, 203);
+
+        }
+
+        .t4 {
+            flex: 1;
+            border: 1px solid rgb(223, 203, 203);
+
+        }
+
+        .t1:hover {
+            background: #73C8A9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #373B44, #73C8A9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #373B44, #73C8A9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            /* -ms-transform: scale(1.5);  */
+  /* -webkit-transform: scale(1.5);  */
+  transform: scale(1.1); 
+
+        }
+
+        .t2:hover {
+            background: #D38312;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #A83279, #D38312);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #A83279, #D38312);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+             transform: scale(1.1); 
+        }
+
+        .t3:hover {
+            background: #C04848;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #480048, #C04848);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #480048, #C04848);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: white;
+            -ms-transform: scale(1.3); 
+  -webkit-transform: scale(1.3); 
+  transform: scale(1.1); 
+        }
+
+        .t4:hover {
+            background: #FDFC47;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24FE41, #FDFC47);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.1); 
+        }
+
+        .top1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0px 20px;
+        }
+
+        .imgs {
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            text-align: center;
+            height: 100px;
+
+
+        }
+
+        .imga {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid rgb(223, 203, 203);
+            margin: 0px 20px;
+            background: #FFEFBA;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFFFFF, #FFEFBA);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFFFFF, #FFEFBA);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .end {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* color: white; */
+        }
+
+        .front {
+            display: flex;
+            align-items: center;
+            /* text-align: center; */
+            /* justify-self: center; */
+            padding: 20px 50px;
+            margin: 20px 10px;
+            line-height: 50px;
+        }
+
+        /* .loc{
+            background-image: url(./back-6.jpg);
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 10px 30px;
+            margin: 0px 10px
+        } */
+        .loc1 {
+            background-image: url(./back-6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 0px 30px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .loc2 {
+            background-image: url(./back-6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .loc3 {
+            background-image: url(./back-6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .loc4 {
+            background-image: url(./back-6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .loc5 {
+            background-image: url(./back-6.jpg);
+            line-height: 50px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .loc6 {
+            background-image: url(./back-6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            line-height: 50px;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .front1 {
+             flex: 1;
+        }
+
+        .front2 {
+            flex: 1;
+        }
+        .busness{
+            background-image: url(./edureka-business.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            color: white;
+            /* line-height: 0px; */
+            /* margin: 30px 10px; */
+            height: 270px;
+        }
+        .fo{
+            display: flex;
+            /* padding: 10px 20px; */
+        }
+        .bus{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .ss{
+            padding: 10px 150px;
+        }
+        .parabus{
+            margin: 10px 10px;
+            padding: 23px 5px;
+        }
+        .contact{
+            padding: 10px;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+        .contact:hover{
+            background-color: rgb(177, 119, 11);
+            color: white;
+        }
+        .cor{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 60px;
+            padding: 10px 40px;
+            
+            }
+            .cor img{
+                /* justify-content: space-between !important; */
+                padding: 20px;
+            } 
+    
+        .footer{
+            background-color:  rgb(20, 17, 17);
+            /* height: 400px; */
+        }
+        
+        .footer1{
+            display: flex;
+            border: 1px solid white;
+        }
+        .foot{
+            flex: 1;
+        }
+        .com{
+            color: rgb(194, 152, 159);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px 30px;
+        }
+        .footpara{
+            color: rgb(155, 108, 116);
+            margin: 10px 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .com1{
+            color: white;
+            line-height: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .fflx{
+            display: flex;
+        }
+        .fflxpara{
+            color: white;
+            flex: 4.5;
+            margin: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .foot .fas{
+            flex: 0.5;
+            margin: 5px;
+        }
+        .footicon{
+            /* align-items: center; */
+            text-align: center;
+        }
+        .footicon .fab{
+            font-size: 30px;
+            /* justify-content: center; */
+            margin: 20px;
+        }
+        .footlast{
+            display: flex;
+            /* justify-content: center; */
+            text-align: center;
+        }
+        .fflxpara1{
+            color: rgb(155, 108, 116);
+        }
+        .com5{
+            color: white;
+        }
+        .footlast0{
+            flex: 1;
+            padding: 0px;
+            font-size: 20px;
+            color: white;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        }
+        .footlast1{
+            display: flex;
+            flex: 1;
+            font-size: 20px;
+            padding: 10px;
+    
+        }
+        .f{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            padding: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .f:hover{
+            color: red;
+        }
+    
+        .footer2{
+            text-align: center;
+        }
+        .footcopy{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        /* .t1 {
+  transition: transform .2s;
+  margin: 0 auto;
+} */
+
+/* .t1:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+} */
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="img">
+            <img src="./AIT-white.jpg" alt=" achieversit">
+        </div>
+        <div class="ul">
+            <ul>
+                <li><a href="corporate training" class="a">corporate training</a></li>
+                <li><a href="placement page" class="a">placement page</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="off">
+
+        <a href="#" class="b">Courses</a>
+        <a href="#" class="b">UI Development</a>
+        <a href="#" class="b">Angular</a>
+        <a href="#" class="b">ReactJS</a>
+        <a href="#" class="b">VUEJS</a>
+        <a href="#" class="b">MEAN</a>
+        <a href="#" class="b">MERN</a>
+        <a href="#" class="b">Digital Marketing</a>
+        <a href="#" class="b">Python</a>
+        <a href="#" class="b">IONIC</a>
+        <a href="#" class="b">React Value</a>
+        <a href="#" class="b">WEB DEV</a>
+    </div>
+    <div>
+        <img src="./full_stack_development.jpg" alt="achieversit" width="100%">
+
+    </div>
+    <div class="middle">
+        <a href="#" class="c">
+            <div class="btn">
+                <div>
+                    <p>BECOME A <br>
+                        <b>UI DEVELOPER</b>
+
+                    </p>
+                </div>
+                <div class="kmore">
+                    <h4>Know More ></h4>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="c">
+            <div class="btn">
+                <div>
+                    <p>BECOME A<br>
+                        <b>ANGULAR DEVELOPER</b>
+
+                    </p>
+                </div>
+                <div class="kmore">
+                    <h4>Know More ></h4>
+                </div>
+            </div>
+
+        </a>
+        <a href="#" class="c">
+            <div class="btn">
+                <div>
+                    <p>BECOME A<br>
+                        <b>ReactJS DEVELOPER</b>
+
+                    </p>
+                </div>
+                <div class="kmore">
+                    <h4>Know More ></h4>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div>
+        <h2 class="tc">TRENDING COURSES</h2>
+        <div class="middle1">
+
+            <div class="submiddle">
+                <div class="ang1">
+                    <i class="fab fa-angular"></i>
+                    <div class="r">
+                        <h2>ANGULAR</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p class="para">HTML is great for declaring static documents, but it falters
+                        when we try to use it for declaring dynamic views in web-applications.
+                        AngularJS lets you extend HTML vocabulary for your application.</p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 5.0(297)
+
+                </div>
+            </div>
+
+
+
+            <div class="submiddle">
+                <div class="ang1">
+                    <i class="fab fa-react"></i>
+                    <div class="r">
+                        <h2>REACT</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p>React makes it painless to create interactive UIs. Design simple views for
+                        each state in your application, and React will efficiently update and render
+                        just the right components when your data changes.</p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.9(212)
+
+                </div>
+            </div>
+            <div class="submiddle">
+                <div class="ang2">
+                    <i class="fab fa-blogger-b"></i>
+                    <div class="r">
+                        <h2>MEAN STACK</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p>The term MEAN stack refers to a collection of JavaScript based technologies
+                        used to develop web applications. MEAN is an acronym for MongoDB,
+                        ExpressJS, AngularJS and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.7(252)
+
+
+                </div>
+            </div>
+
+            <div class="submiddle">
+                <div class="ang3">
+                    <i class="fab fa-airbnb"></i>
+                    <div class="r">
+                        <h2>MERN STACK</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> MERN stack is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="middle2">
+
+            <div class="submiddle1">
+                <div class="ang4">
+                    <i class="fab fa-angular"></i>
+                    <div class="r">
+                        <h2>WEB</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> Web development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+            </div>
+            <div class="submiddle1">
+                <div class="ang5">
+                    <i class="fab fa-airbnb"></i>
+                    <div class="r">
+                        <h2>DIGITAL</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> Digital development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+            </div>
+            <div class="submiddle1">
+                <div class="ang6">
+                    <i class="fab fa-react"></i>
+                    <div class="r">
+                        <h2>REACTIVE</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> Reactive development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+            </div>
+
+            <div class="submiddle1">
+                <div class="ang7">
+                    <i class="fab fa-blogger-b"></i>
+                    <div class="r">
+                        <h2>ICONIC</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> Iconic development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <h2 class="ra">REACTIVE ADDICTIONS</h2>
+        <div class="middle3">
+            <div class="submiddle2">
+                <div class="ang8">
+                    <i class="fab fa-blogger-b"></i>
+                    <div class="r">
+                        <h2>UI</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> UI development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+
+            </div>
+            <div class="submiddle2">
+                <div class="ang9">
+                    <i class="fab fa-blogger-b"></i>
+
+                    <div class="r">
+                        <h2>VUEJS</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> VUEJS development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+
+            </div>
+            <div class="submiddle2">
+                <div class="ang10">
+                    <!-- <i class="fab fa-blogger-b"></i> -->
+                    <i class="fab fa-angular"></i>
+                    <div class="r">
+                        <h2>WORD PRESS</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> WORD PRESS development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+
+            </div>
+            <div class="submiddle2">
+                <div class="ang11">
+                    <!-- <i class="fab fa-blogger-b"></i> -->
+                    <i class="fab fa-airbnb"></i>
+                    <div class="r">
+                        <h2>PYTHON</h2>
+                        <h2>DEVELOPMENT</h2>
+                        <h2>COURSE</h2>
+                    </div>
+                </div>
+                <div class="pa">
+                    <p> PYTHON development is a JavaScript stack that's designed
+                        to make the development process smoother.
+                        MERN includes four open-source components: MongoDB,
+                        Express, React, and Node. js.
+                    </p>
+
+                </div>
+                <div class="rev">
+                    <h3>Reviews</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 4.5(152)
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <div>
+        <h2 class="dtc"> DISCOVER TOP CATEGORIES</h2>
+        <div class="cat">
+            <div class="cat1">
+                <i class="far fa-mobile-alt"></i>
+                <h5>Devops</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-laptop"></i>
+                <h5>Mobile App Dev</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-mobile-alt"></i>
+                <h5>Digital Marketing</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-acorn"></i>
+                <h5>Program & Frame Works</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-database"></i>
+                <h5>Data Types</h5>
+            </div>
+        </div>
+        <div class="cat21">
+            <div class="cat1">
+                <i class="far fa-mobile-alt"></i>
+                <h5>Cloud Computing</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-laptop"></i>
+                <h5>Cyber Security</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-mobile-alt"></i>
+                <h5>Artificial Intelligence</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-acorn"></i>
+                <h5>Python</h5>
+            </div>
+            <div class="cat1">
+                <i class="far fa-database"></i>
+                <h5>Big Data</h5>
+            </div>
+        </div>
+    </div>
+    <div class="enroll">
+        <div class="grow">
+            <h3>Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with Acheivers IT</h3>
+            <button class="conb">CONTACT US</button>
+        </div>
+
+    </div>
+
+    <div class="ach">
+        <h2 class="edge">ACHIEVERS IT EDGE</h2>
+        <div class="sol">
+            <div class="doubt">
+                <!-- <i class="fab fa-fantasy-flight-games"></i> -->
+                <i class="fas fa-check-circle"></i>
+                <h4 class="time">Real Time Doubt Resolution</h4>
+                <p>with live instructors</p>
+            </div>
+            <div class="doubt">
+                <i class="fas fa-poll-h"></i>
+                <h4 class="time">Real Time Doubt Resolution</h4>
+                <p>with live instructors</p>
+
+            </div>
+            <div class="doubt">
+                <i class="fas fa-history"></i>
+                <h4 class="time">Real Time Doubt Resolution</h4>
+                <p>with live instructors</p>
+
+            </div>
+            <div class="doubt">
+                <i class="fas fa-poll"></i>
+                <h4 class="time">Real Time Doubt Resolution</h4>
+                <p>with live instructors</p>
+            </div>
+        </div>
+    </div>
+    <div class="cour">
+        <h1 class="we">Why We are on TOP 1</h1>
+        <p>
+            More people train with AcheiversIT because of ourcommitment to quality, Placement Support, and Real-time
+            Training.
+        </p>
+        <div class="top">
+            <div class="t1">
+                <h1 class="top1">13924 +</h1>
+                <p>TRENDING COURSES</p>
+            </div>
+            <div class="t2">
+                <h1 class="top1">100 +</h1>
+                <p>IT Companies are tied-UP to hire our trained students</p>
+            </div>
+            <div class="t3">
+                <h1 class="top1">50 +</h1>
+                <p>Students attend Interviews every day through our Placement Cell</p>
+            </div>
+            <div class="t4">
+                <h1 class="top1">5 +</h1>
+                <p>Of our students Get Jobs every day in Bangalore and Chennai</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="dtc">Our Trainers From </h2>
+        <div>
+            <div class="imgs">
+                <div class="imga">
+                    <img src="./oracle_files/oracle_logo-300x149.png" alt="oracle" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./accen.png" alt="accenture" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./info.jpg" alt="infosys" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./amazon.png" alt="amazon" width="150" height="60">
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="imgs">
+                <div class="imga">
+                    <img src="./oracle_files/oracle_logo-300x149.png" alt="oracle" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./accen.png" alt="accenture" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./info.jpg" alt="infosys" width="150" height="60">
+                </div>
+                <div class="imga">
+                    <img src="./amazon.png" alt="amazon" width="150" height="60">
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <h2 class="dtc">AchieversIT Process</h2>
+            <div>
+                <img src="./process.jpg" alt="achieversprocess" style="width: 100%;">
+            </div>
+        </div>
+        <div>
+            <h2 class="dtc">Latest Job Openings</h2>
+            <div class="front">
+                <div class="front1">
+                    <div class="loc1">
+                        <h2 class="end">Front End Developer- AngularJS, NodeJS</h2>
+                        <p>Location: Banglore</p>
+
+                    </div>
+                    <div class="loc2">
+                        <h2 class="end">UI Developer - AngularJS Frameworks</h2>
+                        <p>Location: Banglore</p>
+
+                    </div>
+                    <div class="loc3">
+                        <h2 class="end">UI/UX Desinger Developer</h2>
+                        <P>Location: Banglore</p>
+                    </div>
+                </div>
+                <div class="front2">
+                    <div class="loc4">
+                        <h2 class="end">Senoir Software Engineer- Software Developer</h2>
+                        <p>Location: Banglore</p>
+
+                    </div>
+                    <div class="loc5">
+                        <h2 class="end">Python Developer-Fresher Requirement</h2>
+                        <p>Location: Banglore</p>
+                    </div>
+                    <div class="loc6">
+                        <h2 class="end">.Net Senior Developer- 5 Positions</h2>
+                        <p>Location: Banglore</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="busness">
+            <div class="ss">
+            <div class="fo">
+                <h1 class="bus">AchieversIT!</h1>
+                <p class="parabus">for business</p>
+            </div>
+            <h2 class="bus"> No more dull edges in your company.Make your employees into masters....
+            </h2>
+            <h3 class="bus">Nurture talent with instructor-led courses on trending technologies
+            </h3>
+            <button class="contact">BUSINESS CONTACT</button>
+        </div>
+        </div>
+        <div>
+            <h1 class="dtc">Our Corporate Clients</h1>
+            <div class="cor">
+                <img src="./amazon.png" alt="flipkart" width="20%">
+                <img src="./info.jpg" alt="infosys" width="20%">
+                <img src="./amazon.png" alt="amazon" width="20%">
+                <img src="./cog.jpg" alt="cogniz" width="20%">
+                <img src="./accen.png" alt="accenture" width="20%">
+                <img src="./Visa-Logo-2005.jpg" alt="visa" width="20%">
+                <img src="./Dell_Logo.png" alt="dell" width="20%">
+                <img src="./Cisco-logo.png" alt="cisco" width="20%">
+                <img src="./info.jpg" alt="flipkart" width="20%">
+                <img src="./info.jpg" alt="infosys" width="20%">
+            </div>
+
+        </div>
+        <div class="footer">
+        <div class="footer1">
+            <div class="foot">
+                <img src="./AIT-white.jpg" alt="achieversit">
+                <p class="footpara">AchieversIT - provides a wide group of opportunities for freshers and 
+                    Experienced candidate who can develop their skills and build their 
+                    career opportunities across multiple Companies</p>
+            </div>
+            <div class="foot">
+                <h2 class="com">COMPANY</h2>
+                <ul>
+                    <li class="com1">Home</li>
+                    <li class="com1">Placements</li>
+                    <li class="com1">Corporate Training</li>
+                    <li class="com1">CONTACT US</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h2 class="com">TRENDING COURSES</h2>
+                <ul>
+                    <li class="com1">UI Development Course</li>                    
+                    <li class="com1">Angular JS Courses</li>
+                    <li class="com1">React JS Courses</li>
+                    <li class="com1">Digital Marketing Courses</li>    
+                    <li class="com1">Python courses</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h2 class="com">CONTACT INFO</h2>
+                <div class="fflx">
+                    <i class="fas fa-street-view"></i>
+                    <p class="fflxpara">#272, 6th Main, Next to Preksha Montessori , 1st Floor, BTM 2nd Stage, Bangalore, India - 560076</p>
+                </div>
+                <div class="fflx">
+                    <i class="fas fa-phone-volume"></i>
+                    <p class="fflxpara">India : +91 8431-040-457</p>
+                </div>
+                <div class="fflx">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <p class="fflxpara">info@achieversit.com</p>
+                </div>
+
+            </div>
+ 
+        </div>
+        <div class="footer2">
+            <div class="footicon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="footlast">
+                <div class="footlast0">
+                <p class=footcopy>Copyright © 2020 AchieversIT. All Rights Reserved</p></div>
+                <div class="footlast1">
+                    <a href="#" class="f">Privacy Policy</a>
+                    <a href="#" class="f">Terms of Use</a>
+                    <a href="#" class="f">Refund Policy</a>
+
+            </div>
+        </div>
+        
+
+
+
+</body>
+
+</html>
