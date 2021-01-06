@@ -8,21 +8,24 @@
 </head>
 
 <body>
+
     <h1>Even Numbers</h1>
     <p>I'm taking from 2 as Even Numbers..</p>
     <script>
         var i;
         i = 2;
-        while (i < 100) {
-            document.write(+i);
-            i = 2 + i;
-
+        
+        for(i=2; i<100; ++i){
+            if(i%2 == 0){
+                document.write(i)
+            }
         }
+         
 
     </script>
-    <!-- <h1>Leap Year</h1>
+    <h1>Leap Year</h1>
     <script>
-        var n;
+        var ;
         
          if (n % 4 == 0)
              document.write(n + "is leap year")
@@ -30,7 +33,7 @@
         document.write(n + "is not leap year")
 
 
-    </script> -->
+    </script>
 
     <h1>palindrome</h1>
     <script>
@@ -75,6 +78,7 @@
 
 
     </script>
+    
 
 </body>
 
