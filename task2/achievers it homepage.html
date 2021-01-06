@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagehtml</title>
+    <style>
+        .a {
+            text-decoration: none;
+
+        }
+
+        .parent {
+            padding: 40px;
+            background-color: rgb(35, 161, 184);
+        }
+
+        .thing {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .thing li {
+            list-style: none;
+            flex: 7;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(37, 169, 192);
+        }
+
+        .home img {
+            flex: 4;
+        }
+
+        .home :last-child {
+            flex: 9;
+        }
+
+        li {
+            flex: 2;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        li:hover {
+            background-color: rgb(103, 197, 226);
+
+        }
+
+        .parent1 {
+
+            text-align: center;
+            background-color: rgb(165, 184, 110);
+
+            padding: 45px 45px 35px 35px;
+
+
+        }
+
+        .cool {
+            align-items: center;
+            background-color: rgb(133, 155, 77);
+            border: 10px solid white;
+
+            font-weight: bolder;
+            color: white;
+
+        }
+
+        .child1 {
+            display: flex;
+        }
+
+        .child2 {
+            display: flex;
+        }
+
+        .anc1 {
+            display: flex;
+            margin: 10px;
+        }
+
+        .ml-10 {
+            margin-left: 10px;
+        }
+
+        .anc1-child {
+
+            /* line-height: 32px; */
+        }
+
+        .anc1-child a {
+            /* text-decoration: none; */
+            /* display: inline; */
+            padding: 5px;
+            border-bottom: 1px solid black;
+        }
+
+        .grandparent {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        /* .d-inline-block{
+            width: 200px;
+        } */
+        .button {
+            background: rgba(10, 112, 180, 0.685);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .magna {
+            display: flex;
+        }
+
+        .magnasub1 {
+            margin-left: 10px;
+        }
+
+        .magna {
+            display: flex;
+        }
+
+        .grandparent2 {
+            display: flex;
+        }
+
+        .blog {
+            margin-left: 60px;
+        }
+
+        .button2 {
+            background: rgba(10, 112, 180, 0.685);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .footer,
+        .parents4,
+        .foot-par2 {
+            display: flex;
+        }
+
+        /* {
+            display: flex;
+        } */
+        .btn3 {
+            background: rgba(10, 112, 180, 0.685);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .foot-par3 {
+            margin-left: 20px;
+            flex: 2;
+        }
+
+        .footer {
+            background-color: rgb(203, 212, 179);
+            border-bottom: 2px solid black;
+        }
+
+        .par1-child {
+            margin: 10px;
+            border: 10px;
+        }
+
+        .d-inline {
+            width: 33.33%;
+            /* line-height: 20px; */
+        }
+
+        .grandparent p {
+            line-height: 33px;
+        }
+
+        .d-inline-block-p {
+            display: inline-block;
+            width: 50vw;
+            /* line-height: 20px; */
+            /* line-break: auto; */
+        }
+
+        .line-height-20 {
+            line-height: 30px;
+        }
+
+        .line-height-20>div {
+            margin: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="home">
+            <img src="./AIT-white.jpg" alt="Achiversit">
+            <ul class="thing">
+                <li class="li1"><a href="" class="a">homepage</a></li>
+                <li class="li2"><a href="" class="a">two column #2</a></li>
+                <li class="li3"><a href="" class="a">two column #3</a></li>
+                <li class="li4"><a href="" class="a">one column</a></li>
+                <li class="li5"><a href="" class="a">three column</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="parent1">
+        <div class="cool">
+            <h1> put something cool here!</h1>
+            <p> and put something almost as cool as here...</p>
+        </div>
+    </div>
+    <div class="grandparent">
+
+        <div class="d-inline">
+            <h2 style="color: violet;">welcome to minimaxing!</h2>
+            <p> This is <b>Minimaxing</b> a fully responsive HTML5 site template
+                designed by <u>AJ</u> and released for free by <u>AchieversIT</u>. It features a
+                simple, lightweight, design, solid HTML5 and CSS3 code ,and fully
+                responsive support for desktop, tablet, and small displays </p>
+            <button class="button">more cool designs... </button>
+        </div>
+
+
+
+        <div class="parent3">
+            <h2 style="color: violet;"> who are you guys?</h2>
+
+            <div class="child1">
+                <img src="../task2/angularjs.jpg" alt="angularjs" width="100px">
+                <div>
+                    <h4>Jane Anderson</h4>
+                    <p>Varius suspendise valu magna
+                    </p>
+                </div>
+            </div>
+
+            <div class="child2">
+                <img src="../task2/angularjs.jpg" alt="angularjs" width="100px">
+                <div>
+                    <h4>James Anderson</h4>
+                    <p>Vitae magna eget amt jnsgy hxyg<br>
+                        faclis molis and qius
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="parents4"> -->
+
+        <div>
+            <h2 style="color: violet;" class="d-inline-block">how about something!</h2>
+            <div style="display: flex;">
+                <div class="anc1-child">
+
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                </div>
+
+                <div class="anc1-child ">
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                    <a class="anc1" href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- </div> -->
+    </div>
+
+    <div class="grandparent2">
+        <div class="assor1">
+            <h2 style="color: cornflowerblue;">an assortment of pictures and text</h2>
+            <p class="d-inline-block-p">Dius meyw of tbe daijdu, nhgty,jhhc,uhusg,ygysjnux
+                bhgcuyg hvys uyyugsuab uygyusg uyguysb uygyrsw87q dhc
+                gtfcsv hbyusg g5wlmoudwhyf jhguysg
+            </p>
+            <div class="magna">
+                <img src="../task2/black12.jpg" alt="blackimage" width="180px">
+
+                <div class="magnasub1">
+                    <h4> Magna Gravida Delore</h4>
+                    <p>Varius nibh Suspendise vite magna jet et mollsn juto<br>
+                        faciis amet quis cinsecutr in, sikicitund vuta ejuti.Cvr <br>
+                        Magnem eu arcu pirs pajsellu fermenthn elit.
+                    </p>
+
+                </div>
+            </div><br>
+
+
+            <div class="magna">
+                <img src="../task2/black12.jpg" alt="blackimage" width="180px">
+
+                <div class="magnasub1">
+                    <h4> Magna Gravida Delore</h4>
+                    <p>Varius nibh Suspendise vite magna jet et mollsn juto faciis amet quis cinsecutr in, sikicitund
+                        vuta ejuti.Cvr <br>
+                        Magnem eu arcu pirs pajsellu fermenthn elit.
+                    </p>
+
+                </div>
+            </div><br>
+
+            <div class="magna">
+                <img src="./black12.jpg" alt="blackimage" width="180px">
+
+                <div class="magnasub1">
+                    <h4> Magna Gravida Delore</h4>
+                    <p>Varius nibh Suspendise vite magna jet et mollsn juto< faciis amet quis cinsecutr in, sikicitund
+                            vuta ejuti.Cvr Magnem eu arcu pirs pajsellu fermenthn elit. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <h2 style="color: cornflowerblue;">just another blog support</h2>
+            <img src="../task2/black12.jpg" alt="blackimage" width="100%">
+
+            <div>
+
+                <h4>Magna Gravida Dolare</h4>
+                <p>Aensn no masa specien in hac pate dicumnstf soad prises sodles
+                    aliqua aenen ac potat metu. In hac nabitas platea diturn. Phalaeses turps into leo
+                    sceleriwq moli .Nulla ventus ipsi nec est ports rhonus. Mauris soadles nisi nec
+                    consecutor .Creas magna sikisus suhsni us oiss inzu9o jnsh xuhsab ibxauh ubx.
+                </p>
+                <button class="button2">continue reading</button>
+            </div>
+        </div>
+    </div> <br><br>
+
+
+    <div class="footer">
+        
+
+        <div class="foot-par1">
+            <div class="footparchild">
+                <img src="../task2/AIT-white.jpg" alt="image uploading">
+                <p style="font-size: 30px; margin: 5px;">How about a truck load of links</p>
+            </div>
+
+
+            <div class="foot-par2 line-height-20">
+                <div class="par1-child">
+                    <div><a href="#">Sed neque nidi cinsequa</a></div>
+                    <div><a href="#">Sed neque nidi cinsequa</a></div>
+                    <div><a href="#">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+
+                </div>
+                <div class="par1-child">
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+
+                </div>
+
+                <div class="par1-child">
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+
+                </div>
+                <div class="par1-child">
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                    <div><a href=" neqeu nSedisi consequet">Sed neque nidi cinsequa</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="foot-par3">
+            <p style="font-size: 30px;">Something of Interest</p>
+            <p>
+                no masa specien in hac pate dicumnstf soad prises sodles
+                aliqua aenen ac potat metu. In hac nabitas platea diturn. Phalaeses turps into leo
+                sceleriwq moli .Nulla ventus ipsi nec est ports rhonus. Mauris soadles nisi nec
+                consecutor .Creas magna sikisus suhsni us oiss</p><br>
+
+            <button class="btn3">Oh, Please Continue...</button>
+        </div>
+        
+        
+        
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
