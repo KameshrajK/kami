@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Validation</title>
+    <style>
+        #kami {
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+
+        }
+
+        #kami1 {
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+
+        }
+
+        h1 {
+            font-family: sans-serif;
+        }
+
+        #mail {
+            width: 496px;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        #pwd {
+            width: 496px;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(172, 150, 150);
+        }
+
+        #d {
+            height: 25px;
+            width: 12%;
+        }
+
+        #m {
+            height: 25px;
+            width: 12%;
+        }
+
+        #y {
+            height: 25px;
+            width: 12%;
+        }
+
+        span {
+            color: red;
+        }
+
+
+        .g {
+            display: flex;
+
+        }
+
+        #gen {
+            margin: 6px;
+            justify-content: space-between;
+        }
+
+        body {
+            background-color: rgb(97, 177, 177);
+
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .fas {
+            color: red;
+            font-size: 20px;
+            position: relative;
+            right: 27px;
+        }
+
+
+        form {
+            margin-right: 32%;
+            margin-left: 20%;
+            background-color: white;
+            border: none;
+            padding: 20px;
+        }
+
+        .btn {
+            height: 35px;
+            width: 150px;
+            font-size: 20px;
+            align-items: center;
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: rgb(96, 112, 5);
+            border-radius: 5px;
+        }
+
+        label {
+            font-family: sans-serif;
+            font: medium;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="form" name="login" action="#" method="" onsubmit="return formValidation(event)">
+        <fieldset>
+
+            <h1>Create a New Account</h1>
+            <h3>Its Quick and Easy</h3>
+
+            <input type="text" name="First Name" id="kami" placeholder="First Name">
+            <input type="text" name="First Name" id="kami1" placeholder="Sur Name">
+            <!-- <small><i
+                        class="fas fa-exclamation-circle"></i></small> -->
+            <!-- <p id="test"></p> -->
+
+
+            <br><br>
+
+            <input type="email" name="mail" id="mail" placeholder="email address or phone number">
+            <!-- <small><i class="fas fa-exclamation-circle"></i></small> -->
+            <br><br>
+            <input type="password" name="pwd" id="pwd" placeholder="New Password"><br>
+            <p id="pd"></p>
+            <br><br>
+
+            <h3>Date Of Birth</h3>
+
+
+            <select name="Date" class="d1" id="date">
+                <option value="">dd</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="11">26</option>
+
+
+            </select>
+
+
+            <select name="Month" id="month">
+                <option value="">mm</option>
+                <option value="1">JAN</option>
+                <option value="2">FEB</option>
+                <option value="3">MAR</option>
+                <option value="4">APR</option>
+                <option value="5">MAY</option>
+                <option value="6">JUN</option>
+                <option value="7">JUL</option>
+                <option value="8">AUG</option>
+                <option value="9">SEP</option>
+                <option value="10">OCT</option>
+                <option value="11">NOV</option>
+                <option value="11">DEC</option>
+
+
+            </select>
+            <select name="year" id="year">
+                <option value="">yyyy</option>
+                <option value="1">1998</option>
+                <option value="2">1997</option>
+                <option value="3">1996</option>
+                <option value="4">1995</option>
+                <option value="5">1994</option>
+                <option value="6">1993</option>
+                <option value="7">1992</option>
+                <option value="8">1991</option>
+                <option value="9">1990</option>
+                <option value="10">1989</option>
+                <option value="11">1988</option>
+                <option value="11">1987</option>
+
+
+            </select>
+            <p id="pa"></p>
+
+
+
+
+            <h3>Gender</h3>
+            <div>
+                <!-- <p id="gen"></p> -->
+
+                <!-- <input type="radio"  name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio"  name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio"  name="gender" value="Custom">
+                <label for="custom">Custom</label> -->
+                <input class="form-control" type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+                <input class="form-control" type="radio" name="gender" id="female" value="female" />
+                <label for="female">Female</label>
+                <input class="form-control" type="radio" name="gender" id="custom" value="custom" />
+                <label for="custom">Custom</label>
+
+            </div>
+            <p>
+
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and
+                <a href="#"> Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any
+                time.
+            </p>
+            <button class="btn" type="submit">Sign Up</button>
+
+        </fieldset>
+    </form>
+
+    <script>
+        function formValidation(event) {
+            // event.preventDefault();
+            debugger;
+            var firstname = document.getElementById("kami").value;
+            var lastname = document.getElementById("kami1").value;
+            var mailcheck = document.getElementById("mail").value;
+            var psd = document.getElementById("pwd").value;
+            // var sel = document.getElementsById("d").value;
+            var date = document.getElementById('date').value;
+            var month = document.getElementById('month').value;
+            var year = document.getElementById('year').value;
+            var gender = document.getElementsByName('gender');
+            var genValue = false;
+
+
+
+
+            if (firstname == "") {
+                document.getElementById("kami").style = "border : 2px solid red";
+                document.getElementById("kami").focus();
+                return false;
+            }
+
+
+            else if (lastname == "") {
+                document.getElementById("kami").style = "border : 1px solid black";
+                document.getElementById("kami1").style = "border : 2px solid red";
+                document.getElementById("kami1").focus();
+                return false;
+            }
+
+
+            else if (mailcheck == "") {
+                document.getElementById("kami1").style = "border : 1px solid black";
+                document.getElementById("mail").style = "border : 2px solid red";
+                document.getElementById("mail").focus();
+                return false;
+            }
+
+            else if (psd == "") {
+                document.getElementById("mail").style = "border : 1px solid black";
+                document.getElementById("pd").innerHTML = "please enter a password";
+                document.getElementById("pd").style = 'color : red';
+                document.getElementById("pwd").focus();
+                return false;
+
+            }
+
+            else if (date == '') {
+                document.getElementById("pd").innerHTML = "";
+             document.getElementById('date').style = "border : 2px solid red";
+                document.getElementById('date').focus;
+                return false;
+
+            }
+
+            else if (month == '') {
+                document.getElementById('date').style = "border : 1px solid black";
+                document.getElementById('month').style = "border : 2px solid red";
+                document.getElementById('month').focus;
+                return false;
+
+            }
+            else if (year == '') {
+                document.getElementById('month').style = "border : 1px solid black";
+                document.getElementById('year').style = "border : 2px solid red";
+                document.getElementById('year').focus;
+                return false;
+
+            }
+
+            for (var i = 0; i < gender.length; i++) {
+                if (gender[i].checked == true) {
+                    genValue = true;
+                }
+            }
+            if (!genValue) {
+                alert("Please Choose the gender");
+                return false;
+            }
+
+            else {
+                alert("Form Submitted Successfully");
+                return true;
+
+            }
+            }
+
+    </script>
+</body>
+
+</html>
