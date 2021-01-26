@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World'sWonders</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+            font-style: italic;
+        }
+    
+        div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        figure{
+                margin-left: 20px;
+                padding-bottom:8%;
+                padding-right: 48px;
+                width: 20pc;   
+                height: 13pc; 
+            }
+    </style>
+</head>
+
+<body>
+
+    <h1>Seven Wonders In The World</h1>
+    <header id="kami"></header>
+
+    <script>
+
+        var wonderHTML = "";
+        var wonderHTMLdata = [
+
+            {
+                imgName: "tamilpride.jpg",
+                imgTitle: "BIG TEMPLE",
+                imgCountry: "India",
+                abtImg: "Brihadishvara Temple, also called Rajarajesvaram or Peruvudaiyār Kōvil,<br> is a Hindu temple dedicated to Shiva located in South bank of Kaveri river in Thanjavur, Tamil Nadu, India.",
+            },
+            {
+                imgName: "great_wall.jpg",
+                imgTitle: "The Great Wall",
+                imgCountry: "China",
+                abtImg: "The Great Wall of China is a series of fortifications that were built across <br> the historical northern borders of ancient Chinese states ",
+
+            },
+            {
+                imgName: "petraimg.jpg",
+                imgTitle: "Petra. The Khaznah (“Treasury”)",
+                imgCountry: "Jordan",
+                abtImg: "Petra originally known to its inhabitants in as Raqmu or Raqēmō (𐢚𐢛𐢓𐢈), is <br> a historic and archaeological city in southern Jordan",
+            },
+            {
+                imgName: "chicenimg.jpg",
+                imgTitle: "Chichén Itzá",
+                imgCountry: " Mexico",
+                abtImg: "Chichen Itza was a large pre-Columbian city built by <br>the Maya people of the Terminal Classic period.",
+            },
+            {
+                imgName: "machupichu.jpg",
+                imgTitle: " Machu Picchu ",
+                imgCountry: "Peru ",
+                abtImg: "Machu Picchu is a 15th-century Inca citadel, located in <br> the Eastern Cordillera of southern Peru. ",
+            },
+            {
+                imgName: "jesus.jpg",
+                imgTitle: "Christ the Redeemer",
+                imgCountry: "Brazil",
+                abtImg: "Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio De Janeiro,<br> Brazil, created by Polish-French sculptor ",
+            },
+            {
+                imgName: "colles.jpg",
+                imgTitle: "The Colosseum",
+                imgCountry: "Rome",
+                abtImg: "The Colosseum is an oval amphitheatre in the centre of <br> the city of Rome, Italy, just east of the Roman Forum",
+            },
+        ]
+
+        function myfunction() {
+
+            wonderHTML += `<div id = "forme">`
+            for (let i = 0; i<wonderHTMLdata.length; i++) {
+
+                wonderHTML += `<figure>`
+                wonderHTML += `<img src = " C:/Users/hp/Desktop/AchiversIT/${wonderHTMLdata[i].imgName}"width="130%" height="100%">`
+                wonderHTML += `<figcaption><b>${wonderHTMLdata[i].imgTitle}</b></figcaption>`
+                wonderHTML += `<figcaption><b>${wonderHTMLdata[i].imgCountry}</b></figcaption>`
+                wonderHTML += `<figcaption> ${wonderHTMLdata[i].abtImg}</figcaption>`
+                wonderHTML += `</figure>`
+
+                document.getElementById('kami').innerHTML = wonderHTML;
+
+            }
+            wonderHTML += `</div>`
+        }
+        myfunction();
+
+    </script>
+</body>
+
+</html>
