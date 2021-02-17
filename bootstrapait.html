@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>achieversit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .c {
+            color: white;
+            margin: 5px;
+        }
+
+        .c:hover {
+            color: red;
+        }
+
+        .b {
+            color: grey;
+        }
+
+        .b:hover {
+            background-color: red;
+            border-radius: 25px;
+            color: white;
+
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 300px;
+        }
+
+        button {
+            background: red;
+        }
+
+        .carousel-caption h1 {
+            font-size: 25px;
+            font-style: normal;
+        }
+
+        .pos {
+            position: relative;
+            bottom: 100px;
+            left: 20px;
+        }
+
+        .cour {
+            position: relative;
+            bottom: 25px;
+            align-items: center;
+            right: 10px;
+            margin-left: 40px;
+        }
+
+        .op {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+        }
+
+        .op1 {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+
+        }
+
+        .op2 {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+        }
+
+        .op:hover {
+            background: #83a4d4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #b6fbff, #83a4d4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
+
+        .op1:hover {
+            background: #FF4E50;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F9D423, #FF4E50);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
+
+        .op2:hover {
+            background: #B3FFAB;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #12FFF7, #B3FFAB);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
+
+        .fab {
+            font-size: 65px;
+        }
+
+        .ang {
+            background: #83a4d4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #b6fbff, #83a4d4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+
+        .ang1 {
+            background: #FDFC47;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24FE41, #FDFC47);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang2 {
+            background: #70e1f5;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffd194, #70e1f5);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang3 {
+            background: #5f2c82;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #49a09d, #5f2c82);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang4 {
+            background: #73C8A9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #373B44, #73C8A9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #373B44, #73C8A9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang5 {
+            background: #FF4E50;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F9D423, #FF4E50);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang6 {
+            background: #E6DADA;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #274046, #E6DADA);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #274046, #E6DADA);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .ang7 {
+            background: #DE6262;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFB88C, #DE6262);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .fas {
+            color: yellow;
+        }
+
+        .bx {
+            box-shadow: 0 0 15px rgb(177, 182, 224);
+        }
+
+        .card1 {
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            border-radius: 0;
+            height: 140px;
+            margin: 0;
+
+        }
+
+        .card1:hover {
+            transform: scale(1.1);
+            transition-duration: 0.1s;
+        }
+
+        .Top {
+            padding-left: 100px;
+            padding-right: 150px;
+        }
+
+        .fa-dev,
+        .fa-laptop-code,
+        .fa-mobile-alt,
+        .fa-funnel-dollar,
+        .fa-file-code,
+        .fa-database,
+        .fa-chalkboard-teacher,
+        .fa-mask,
+        .fa-jsfiddle,
+        .fa-python,
+        .fa-codepen {
+            font-size: 40px;
+        }
+
+        .dt {
+            color: rgb(42, 9, 73);
+        }
+
+        .button {
+            border: none;
+        }
+
+        .contact {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .contact:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .top {
+            background-image: url(./background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* .bx1 h1 {
+            color: rgb(52, 19, 83);
+        }
+
+        .bx1 p {
+            color: rgb(153, 117, 117);
+        } */
+
+        .t1:hover {
+            background: #83a4d4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #b6fbff, #83a4d4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+
+        .t2:hover {
+            background: #FF4E50;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F9D423, #FF4E50);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+
+        .t3:hover {
+            background: #FBD3E9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #BB377D, #FBD3E9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #BB377D, #FBD3E9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+
+        .t4:hover {
+            background: #FF512F;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #DD2476, #FF512F);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+
+        .ljo {
+            background-image: url(./back-6.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .Top3 {
+            padding-right: 150px;
+        }
+
+        .foot-icon {
+            font-size: 30px;
+        }
+
+        .foot-icon1 {
+            font-size: 25px;
+
+        }
+
+        .footer-pos {
+            background-color: black;
+            padding: 18px;
+        }
+
+        .foot-icon3 {
+            font-size: 23px;
+        }
+
+        .footer-icon .fab {
+            font-size: 30px;
+            padding: 10px;
+            color: white;
+        }
+
+        .footer-icon .fab:hover {
+            animation: rotate 1s infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .footer {
+            background: black;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer a:hover {
+            color: red;
+        }
+
+        .wapp i {
+            font-size: 40px;
+            color: red;
+            margin-left: 10px;
+        }
+
+        .env {
+            color: yellow;
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .header-icon {
+            color: white;
+        }
+
+        .header-icon:hover {
+            color: red;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #mybtn:hover {
+            background-color: rgb(85, 85, 85);
+        }
+
+        .btn-con {
+
+            position: fixed;
+            transform: rotate(-90deg);
+            z-index: 1010;
+            top: 50%;
+            /* left: 453px; */
+            right: -3.6%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn2 {
+            background-color: rgb(57, 248, 9);
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .pic{
+           background-image: url(./back-6.jpg);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+           
+       } 
+       .pic-bottom{
+           background-image: url(./bgweb.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+       }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand-lg bg-dark">
+            <img src="./AIT-white.jpg" alt="aitimage" style="width: 200px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar ml-auto mr-5">
+                    <li class="nav-item"><a href="#" class="nav-link text-decoration-none header-icon">Placement
+                            Page</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-decoration-none header-icon">Corporate
+                            training</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="col-12 m-0 bg-white">
+        <div class="mx-2 nav p-2 row">
+            <div class="dropdown dropright mt-2">
+                <a type="button" class="dropdown-toggler text-decoration-none text-secondary" data-toggle="dropdown"><i
+                        class=" fas fa-bars fa-2x" style="color:rgb(105, 133, 105)""></i>
+                    <span class=" my-2">COURSES</span></a>
+                <div class="dropdown-menu p-0">
+                    <h4 class="bg-warning py-4 m-0 text-white text-center">Courses List</h4>
+                    <a href="#" class="list-group-item list-group-item-action">Front end Courses</a>
+                    <a href="#" class="list-group-item list-group-item-action">Back end Courses</a>
+                    <a href="#" class="list-group-item list-group-item-action">digital Marketing</a>
+                </div>
+            </div>
+
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">UI development</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">Angular</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">React JS</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">VUE JS</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">MEAN</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">MERN</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">Digital Marketing</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">PYTHON</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">ICONIC</a>
+            </span>
+            <span class="nav-item my-2">
+                <a href="#" class="nav-link text-decoration-none d-none d-md-block b">React Native</a>
+            </span>
+           
+        </div>
+    </div>
+    <!-- <button onclick="myfunction()" title="Go To top" id="mybtn">Top</button> -->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./angularb.jpg" alt="ang" width="100%">
+                <div class="carousel-caption">
+                    <div class="pos">
+                        <h1>Angular Developement Course</h1>
+                        <button class="border p-2 text-white btnn">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./react_training.jpg" alt="react" width="100%">
+                <div class="carousel-caption">
+                    <div class="pos">
+                        <h1>ReactJS Developement Course</h1>
+                        <button class="border p-2  text-white btnn">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./aws.jpg" alt="aws" width="100%">
+                <div class="carousel-caption">
+                    <div class="pos">
+                        <h1 class="">Python Developement Course</h1>
+                        <button class="border p-2  btnn text-white">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container col-12">
+        <div class="cour">
+            <div class="row">
+                <a href="" class="col-md-3 mx-5 text-decoration-none row op">
+                    <div class="col-md-7">
+                        <p>Become a</p>
+                        <h5>UI Developer</h5>
+                    </div>
+                    <div class="p-3 col-md-5">
+                        know more
+                    </div>
+                </a>
+
+                <a href="#" class=" col-md-3 mx-5 text-decoration-none row op1">
+                    <div class="col-md-7">
+                        <p>Become a</p>
+                        <h5>UI Developer</h5>
+                    </div>
+                    <div class="p-3 col-md-5">
+                        know more
+                    </div>
+                </a>
+
+                <a href="#" class=" col-md-3 mx-5 text-decoration-none row op2">
+                    <div class="col-md-7">
+                        <p>Become a</p>
+                        <h5>JS Developer</h5>
+                    </div>
+                    <div class="p-3 col-md-5">
+                        know more
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="pl-5 ml-5"><b>TRENDING COURSES</b></h3>
+
+    <div class="container-xl p-0 my-4">
+        <div class="row mx-2 w-100">
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">ANGULAR</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 2 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white text-align ang1">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="col-md-9 my-3 ">
+                            <h5 class="mb-0">REACT</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 STARTS HERE -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang2">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-blogger-b"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">MEAN STACK</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 4 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang3">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-airbnb"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">MERN STACK</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang2">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">WEB</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 6 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang5">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">DIGITAL</h5>
+                            <h5 class="mb-0"> MARKETING</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 7 STARTS HERE -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-blogger-b"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">REACT NATIVE</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 8 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang7">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-airbnb"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">ICONIC</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="pl-5 ml-5"><b>RELATIVE COURSES</b></h3>
+
+
+    <div class="container-xl p-0 my-4">
+        <div class="row mx-2 w-100">
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">UI</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 10 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang5">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">VUEJS</h5>
+                            <h5 class="mb-0"> MARKETING</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 11 STARTS HERE -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang6">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-blogger-b"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">WORD PRESS</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 8 STARTS -->
+            <div class="col-md-3 p-0">
+                <div class="m-2 bx">
+                    <div class="row m-0 text-white ang7">
+                        <div class="col-md-3 my-3">
+                            <i class="fab fa-airbnb"></i>
+                        </div>
+                        <div class="col-md-9 my-3">
+                            <h5 class="mb-0">PYTHON</h5>
+                            <h5 class="mb-0">DEVELOPMENT</h5>
+                            <h5 class="mb-0">COURSE</h5>
+                        </div>
+                    </div>
+                    <p class="m-1 border-bottom"><small>
+                            HTML is great for declaring static documents, but it falters
+                            when we try to use it for declaring dynamic views in web-applications.
+                            AngularJS lets you extend HTML vocabulary for your application.
+                        </small></p>
+                    <div class="m-1">
+                        <h6>Reviews</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 5.0(297)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="pl-5 ml-5"><b>Discover Top Categories</b></h3>
+
+    </div>
+    <div class="container col-md-12  p-0 my-4">
+        <div class="row mx-2 Top ">
+            <div class=" col-md-2 p-4">
+                <div class="card1  ">
+                    <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fab fa-dev text-danger"></i></div>
+                    <div class=" body  pb-5 pl-5 small dt"><b>DevOps</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1 ">
+                    <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-laptop-code text-primary"></i></div>
+                    <div class=" body  pb-5 pl-5 small dt"><b>FrontEnd</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1">
+                    <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mobile-alt text-info"></i></div>
+                    <div class=" body  pb-5 pl-4 small dt"><b>MobileAppDev</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="card1  ">
+                    <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-funnel-dollar text-success"></i></div>
+                    <div class=" body  pb-5 pl-3 small  dt"><b>DigitalMarketing</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1">
+                    <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-file-code text-warning "></i></div>
+                    <div class=" body  pb-0 pl-5 small  dt"><b>Program</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="card1">
+                    <div class="col-md-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-database text-secondary"></i></div>
+                    <div class=" body col-md-2 pb-5 ml-3 small dt"><b>DataTypes</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-md-12  p-0 my-4">
+        <div class="row mx-2 Top">
+            <div class=" col-md-2 p-4">
+                <div class="card1 ">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-chalkboard-teacher text-success"></i>
+                    </div>
+                    <div class=" body col-2 pb-5 pl-4 small dt"><b>Softwaretesting</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1 ">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-jsfiddle text-danger"></i></div>
+                    <div class=" body col-2 pb-5 pl-4 small dt"><b>CloudComputing</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1 ">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mask text-secondary"></i></div>
+                    <div class=" body col-2 pb-5 pl-4 small dt"><b>CyberSecurity</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="card1 ">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mobile-alt text-info"></i></div>
+                    <div class=" body  pb-4 m-1 small dt"><b>ArtificialInteligents</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-python text-success"></i></div>
+                    <div class=" body col-2 pb-5 pl-5 small dt"><b>Python</b></div>
+                </div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="card1">
+                    <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-codepen text-dark"></i></div>
+                    <div class=" body col-2 pb-5 pl-5 small  dt"><b>Bigdata</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-md-12 ang3 pt-4 pb-2 text-center">
+        <h3 class="col-md-11  mb-2 text-white">Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals
+            with Acheivers IT</h3>
+        <div class="m-5">
+            <a class="contact large px-3 font-weight-bolder text-decoration-none" href="#">CONTACT US</a>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="container-md col-md-12 text-center top">
+        <h1 class="text-primary">Why We are on TOP 1</h1>
+        <p class="text-primary">More people train with AcheiversIT because of ourcommitment to quality,
+            Placement Support, and Real-time Training.</p>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 p-0 t1">
+                    <div class="p-4 text-center mb-0 bx bx1">
+                        <h1>13570 +</h1>
+                        <p>TRENDING COURSES</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 ">
+                    <div class="py-2 pt-4 text-center bx bx1 t2">
+                        <h1>100 +</h1>
+                        <p>Students attend Interviews every day through our Placement Cell</p>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card-3 py-2 pt-4 text-center bx bx1 t3">
+                        <h1>50 +</h1>
+                        <p>Students attend Interviews every day through our Placement Cell</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-4 py-2 pt-4 bx  text-center bx1 t4">
+                        <h1>5 +</h1>
+                        <p>Of our students Get Jobs every day in Bangalore and Chennai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="pl-5 m-4 ml-5"><b>Latest Job Openings</b></h3>
+    <div class="container col-md-12">
+        <h2>Accordion Example</h2>
+        <div class="ml-2">
+            <div class="row ml-5">
+                <div  class="col-md-6 ">
+                    <div id="accordion">
+                        <div class="m-3">
+                            <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseOne"> 
+                                <div class="pic pb-5 pt-1 px-2">                    
+                               <h4>Front End Developer - Angular js,Nodejs</h4>
+                                <small>Location : Bangalore</small>
+                            </div>   
+                            </a>
+
+                            <div id="collapseOne" class="collapse pic-bottom" data-parent="#accordion">
+                                <div class="card-body text-white">
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                    <div id="accordion1">
+                            <div class="m-3">
+                                <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseTwo">
+                                    <div class="pic pb-5 pt-1 px-2">                    
+                                        <h4>Front End Developer - Angular js,Nodejs</h4>
+                                         <small>Location : Bangalore</small>
+                                     </div>  
+                                </a>
+
+                                <div id="collapseTwo" class="collapse pic-bottom" data-parent="#accordion1">
+                                    <div class="card-body text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="accordion2">
+                        <div class="m-3">
+                            <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseThree">
+                                <div class="pic pb-5 pt-1 px-2">                    
+                                    <h4>Front End Developer - Angular js,Nodejs</h4>
+                                     <small>Location : Bangalore</small>
+                                 </div>  
+                            </a>
+
+                            <div id="collapseThree" class="collapse pic-bottom" data-parent="#accordion">
+                                <div class="card-body text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion3">
+                            <div class="m-3">
+                                <a class="card-link col-md-5  text-white" data-toggle="collapse" href="#collapseFour">
+                                    <div class="pic pb-5 pt-1 px-2">                    
+                                        <h4>Front End Developer - Angular js,Nodejs</h4>
+                                         <small>Location : Bangalore</small>
+                                     </div>  
+                                </a>
+
+                                <div id="collapseFour" class="collapse pic-bottom" data-parent="#accordion">
+                                    <div class="card-body text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- card 2 starts -->
+                <div class="col-md-6">
+                    <div id="accordion4">
+                        <div class="m-3">
+                            <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseFive">
+                                <div class="pic pb-5 pt-1 px-2">                    
+                                    <h4>Front End Developer - Angular js,Nodejs</h4>
+                                     <small>Location : Bangalore</small>
+                                 </div>  
+                            </a>
+
+                            <div id="collapseFive" class="collapse pic-bottom" data-parent="#accordion">
+                                <div class="card-body text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion5">
+                            <div class="m-3">
+                                <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseSix">
+                                    <div class="pic pb-5 pt-1 px-2">                    
+                                        <h4>Front End Developer - Angular js,Nodejs</h4>
+                                         <small>Location : Bangalore</small>
+                                     </div>  
+                                </a>
+
+                                <div id="collapseSix" class="collapse pic-bottom" data-parent="#accordion">
+                                    <div class="card-body text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="accordion6">
+
+                        <div class="m-3">
+                            <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseSeven">
+                                <div class="pic pb-5 pt-1 px-2">                    
+                                    <h4>Front End Developer - Angular js,Nodejs</h4>
+                                     <small>Location : Bangalore</small>
+                                 </div>  
+                            </a>
+
+                            <div id="collapseSeven" class="collapse pic-bottom" data-parent="#accordion">
+                                <div class="card-body text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion7">
+                            <div class="m-3">
+                                <a class="card-link col-md-5 text-white" data-toggle="collapse" href="#collapseEight">
+                                    <div class="pic pb-5 pt-1 px-2">                    
+                                        <h4>Front End Developer - Angular js,Nodejs</h4>
+                                         <small>Location : Bangalore</small>
+                                     </div>  
+                                </a>
+
+                                <div id="collapseEight" class="collapse pic-bottom" data-parent="#accordion">
+                                    <div class="card-body text-white">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <h3 class="pl-5 m-4 ml-5"><b>Our Corporate Clients</b></h3>
+    <div class="container col-md-12 m-0">
+        <div class="row mx-2Top3">
+            <div class=" col-md-2 p-4">
+
+                <div class="ml-4 mt-2 pl-5 "><img src="./Dell_Logo.png" alt="hcl" width="150px" /></div>
+
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 "><img src="./amazon.png" alt="cognizant" width="150px" /></div>
+
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5  "><img src="./accen.png" alt="infosys" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="ml-4 mt-2 pl-5"><img src="./Visa-Logo-2005.jpg" alt="accenture" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 pb-4"><img src="./Dell_Logo.png" alt="oracle" height="50px" width="150px" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container col-md-12  p-0 my-2">
+        <div class="row mx-2 Top3 ">
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 "><img src="./Dell_Logo.png" alt="wipro" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 "><img src="./ibm.png" alt="amazon" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 "><img src="./Visa-Logo-2005.jpg" alt="flipcart" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="ml-4 mt-2 pl-5"><img src="./Cisco-logo.png" alt="visa" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4">
+                <div class="ml-4 mt-2 pl-5 pb-4"><img src="./accen.png" alt="cisco" width="150px" /></div>
+            </div>
+            <div class=" col-md-2 p-4 ">
+                <div class="ml-4 mt-2 pl-5 "><img src="./amazon.png" alt="dell" width="150px" /></div>
+            </div>
+        </div>
+    </div>
+    <!-- Button slider -->
+
+    <button type="button" class="btn-con px-4 bg-oranged py-2 text-white font-bold fixed pb-0" data-toggle="modal"
+        data-target="#modal-demo">Contact US</button>
+    <div class="modal fade" id="modal-demo" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <form>
+                            <label for="name">NAME</label>
+                            <input type="text" name="name" class="form-control" placeholder="please enter ur name">
+                            <br>
+                            <label for="email">EMAIL</label>
+                            <input type="email" class="form-control" name="email" placeholder="enter ur email"><br>
+                            <label for="contact">CONTACT NUMBER</label>
+                            <input type="text" placeholder="Enter ur phone Number" class="form-control" name="contact">
+                            <br>
+                            <label for="message">Message</label>
+                            <input type="text" id="message" class="form-control" placeholder="Your Message">
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn2 form-control mb-3 py-1" data-dismiss="modal">submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer ">
+        <div class="row">
+            <div class="col-md-3">
+
+                <span class="col-md-3"><img src="./AIT-white.jpg" alt="ait"></span>
+                <p class="text-secondary p-4">AchieversIT - provides a wide group of opportunities for freshers and
+                    Experienced candidate who can
+                    develop their skills and build their career opportunities across multiple Companies.</p>
+            </div>
+            <div class="col-md-2 ml-5 my-5">
+                <h5 class="text-success"><b>COMPANY</b></h5>
+                <ul class="py-3">
+                    <li class="p-1"><a href="#" class="text-decoration-none">Home</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">Placements</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">Corporate Training</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3 my-5">
+                <h5 class="text-success"><b>TRENDING COURSES</b></h5>
+                <ul class="py-3">
+                    <li class="p-1"><a href="#" class="text-decoration-none">UI Development Corse</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">Angular JS Course</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">React JS Course</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">Digital Marketing Course</a></li>
+                    <li class="p-1"><a href="#" class="text-decoration-none">Python Course</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 my-5">
+                <h5 class="text-success"><b>CONTACT INFO</b></h5>
+                <div class="p-3">
+                    <div class="row">
+                        <div class="col-md-2 foot-icon my-3">
+                            <i class="fas fa-street-view"></i>
+                        </div>
+                        <p class="col-md-9 text-white">
+                            <small> #272, 6th Main, Next to Preksha Montessori , 1st Floor, BTM 2nd Stage,
+                                Bangalore,
+                                India
+                                - 560076</small>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 foot-icon1 pl-4">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <p class="col-md-10 text-white">
+                            India : +91 8431-040-457
+                        </p>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 pl-4">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <p class="col-md-10 text-white">
+                            info@achieversit.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <br><br>
+        <div class="text-center">
+            <div class="footer-icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <br>
+        <div class="col-md-12 row text-center">
+            <div class="col-md-5 ml-4">
+                <p class="ml-5 text-secondary">Copyright © 2020 AchieversIT. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="text-decoration-none px-3">Privacy Policy</a>
+                <a href="#" class="text-decoration-none px-3">Terms of use</a>
+                <a href="#" class="text-decoration-none px-3">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-pos">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="wapp"><i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <span><i class="fas fa-phone-volume"></i></span>
+                    <span><a href="#" class="text-decoration-none">Call us on : +91 8431-040-457</a></span>
+                </div>
+                <div class="col-md-3 pt-2">
+                    <span class="env"><i class="far fa-envelope"></i></span>
+                    <span> <a href="#" class="text-decoration-none">A Call Back</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-caret-up px-3"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
