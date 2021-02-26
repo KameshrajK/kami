@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-Javatasks</title>
+    <style>
+        table,th,tr,td{
+            border-collapse:collapse;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h3>display last four elements</h3>
+    <script>
+        // Question 1..
+        var arr = [23, 44, 56, 78, 99];
+        var slicingResult = arr.slice(1);
+        document.write(slicingResult);
+    </script>
+    <hr>
+    <h3>Print the number 1-100 which is divisible by 3 and 7 </h3>
+
+    <script>
+        // Question 2
+        var i = "";
+
+        for (i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 7 == 0) {
+                document.write(i + ",");
+            }
+        }   
+    </script>
+    <hr>
+
+    <h3> longest word within the string</h3>
+    <script>
+        // Question 3
+        var str = "web development tutorials"
+        var strSplit = str.split(' ');
+        var longestWord = 0;
+        result = "";
+        for (i = 0; i < strSplit.length; i++) {
+            if (strSplit[i].length > longestWord) {
+                longestWord = strSplit[i].length;
+                result = strSplit[i];
+            }
+        }
+        document.write(result);
+
+    </script>
+    <hr>
+    <h3> Program to get only prime numbers</h3>
+    <p><b>Note:</b>Made it in console</p>
+    <!-- Question 5 -->
+    <!-- <script>
+        
+        const lowerNumber = parseInt(prompt('Enter lower number: '));
+const higherNumber = parseInt(prompt('Enter higher number: '));
+
+console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+for (let i = lowerNumber; i <= higherNumber; i++) {
+    let flag = 0;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if (i > 1 && flag == 0) {
+        console.log(i);
+    }
+}
+    </script> -->
+    <hr>
+
+    <h3>Switching Bulb</h3>
+    <img src="./bulbimage.jpg" alt="bulbimage" id="myimage" width="150px" onclick="bulbchange()" height="200px">
+    <script>
+        //  Question 8
+        function bulbchange() {
+            var image = document.getElementById("myimage");
+            if (image.src.match("bulbon")) {
+                image.src = "bulbimage.jpg";
+            } else {
+                image.src = "bulbon.jpg";
+            }
+
+        }
+    </script>
+    <hr>
+    <h3>Storing Object in a local storage</h3>
+    <p><b>Note:</b>Made it in console</p>
+    <script>
+        // Question 5
+        let obj = {
+            firstName: "Mr",
+            lastName: "sharma",
+            address: "Bangalore"
+        }
+
+        localStorage.setItem("obj", JSON.stringify(obj));
+        console.log(obj);
+
+    </script>
+
+    <hr>
+    <h3>Ascending and Descending</h3>
+    <script>
+        // Question 12
+
+        let ar = [23, 45, 7, 8, 122, 55, 67];
+        ar.sort(function (a, b) { return a - b });
+        document.write("Ascending Order :" + ar + "<br>" + "<br>");
+
+        var desResult = ar.reverse();
+        document.write("Descending Order:" + desResult);
+    </script>
+    <hr>
+
+    <h3>border-collpase</h3>
+
+    <table border="1px solid">
+        <tr>
+            <th>NAME</th>
+            <th>MARKS</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr>
+            <td>kamesh</td>
+            <td>100</td>
+            <td>banglore</td>
+        </tr>
+        <tr>
+            <td>sanjay</td>
+            <td>100</td>
+            <td>chennai</td>
+        </tr>
+        <tr>
+            <td>kishore</td>
+            <td>100</td>
+            <td>covai</td>
+        </tr>
+    </table>
+
+    <h3>creating dynamic table</h3>
+    <script>
+  var  students = [
+  {
+          Id:1,
+          name:"Ramesh",
+          EmailId:"ramesh@gmail.com",
+          address:"bangalore"
+          
+  },
+  {
+          Id:2,
+          name:"Rajesh",
+          EmailId:"rajesh@gmail.com",
+          address:"hyderabad"
+  },
+  {
+          Id:3,
+          name:"Rakesh",
+          EmailId:"rakesh@gmail.com",
+          address:"chennai"
+  },
+  
+]
+var tabledata = `<table id="mytable" border="1">
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>EmailId</th>
+                  <th>Address</th>
+                  <th>delete</th>
+                </tr>`;
+         for(let i=0;i<3;i++){
+            tabledata +=`<tr>
+                  <td>${students[i].Id}</td>
+                  <td>${students[i].name}</td>
+                  <td>${students[i].EmailId}</td>
+                  <td>${students[i].address}</td>
+                  <td><button onclick=myfunction(${i})>delete</button></td>
+                </tr>`
+}
+tabledata +=`</table>`
+
+document.write(tabledata);
+function myfunction(){
+  document.getElementById("mytable").deleteRow(1);
+}
+    </script>
+
+    <hr>
+    <h3>Converting min to sec</h3>
+    <script>
+        function convertMintosec(minutes) 
+        {
+          return (minutes * 60);
+        }
+        document.write( "Conversion of One minute to seconds : " + convertMintosec(1)); 
+    
+      </script> 
+      <hr>
+
+      <h3>javascript selector nd DOM Manipulation</h3>
+       
+      <h5>Changing Inner Text</h5>
+      <p id="aftChange"></p>
+         <script>
+            // var i= document.getElementById('aftChange').innerText;
+            document.getElementById("aftChange").innerText = changedone;
+         </script> 
+</body>
+
+</html>
